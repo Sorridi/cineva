@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Cineva - Nuova recensione</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="anton">
+    <meta name="description" content="Sito per recensioni film e serie TV.">
+    <meta name="keywords" content="film, series, tv, review, actor, actress">
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <a href="index.html"><img src="logo.jpg" alt="Logo Cineva" height=150></a>
+      <nav>
+        <p>Pagine del sito</p>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="news.html">News</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="chi_siamo.html">Chi siamo</a></li>
+          <li><a href="contatti.html">Contatti</a></li>
+          <li><a href="login.html">Login</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="centered">
+      <h1>Nuova recensione</h1>
+      <label for="titolo">Titolo</label>
+      <input type="text" name="titolo">
+      <br>
+      <br>
+      <label for="descrizione">Descrizione</label>
+      <input type="text" name="descrizione">
+      <br>
+      <br>
+      <p>
+        Tipologia
+        <input type="radio" id="serie-tv" name="tipologia" value="serie-tv">
+        <label for="serie-tv">Serie TV</label>
+        <input type="radio" id="film" name="tipologia" value="film">
+        <label for="film">Film</label>
+      </p>
+      <br>
+      <label for="voto">Voto (da 1 a 5)</label>
+      <input type="number" id="voto" name="voto" min="1" max="5" value="5">
+      <br>
+      <br>
+      <input type="button" name="pubblica" value="Pubblica">
+    </main>
+  </body>
+</html>
